@@ -1,36 +1,36 @@
 class ChromeDebugMcp < Formula
   desc "Rust MCP Server for full Chrome CDP control and interactive JS debugging"
   homepage "https://github.com/raultov/chrome-debug-mcp"
-  version "1.5.0"
+  version "1.5.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/raultov/chrome-debug-mcp/releases/download/v1.5.0/chrome-debug-mcp-aarch64-apple-darwin.tar.xz"
-      sha256 "3bfbcedf6e9de427b2da0a037d66bb2732e3d2ce837b6c62c714a85134881839"
+      url "https://github.com/raultov/chrome-debug-mcp/releases/download/v1.5.1/chrome-debug-mcp-aarch64-apple-darwin.tar.xz"
+      sha256 "6d712b91ee3ca3721d8d4993bc59920de197ca853079ca01b718885bb4a90d90"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/raultov/chrome-debug-mcp/releases/download/v1.5.0/chrome-debug-mcp-x86_64-apple-darwin.tar.xz"
-      sha256 "5239d31d625dc9d26d3cf2e045a776db79b4722ed4d38f4e20c4feb6e2e28227"
+      url "https://github.com/raultov/chrome-debug-mcp/releases/download/v1.5.1/chrome-debug-mcp-x86_64-apple-darwin.tar.xz"
+      sha256 "9ff7dd00e404064fdcefabaac51e931c22b07539acd626b330dc08d28c1bf9e1"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/raultov/chrome-debug-mcp/releases/download/v1.5.0/chrome-debug-mcp-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "479c96c20f0600f98575a3c286b69793e58ecccf12e587b25e125c80ec100416"
+      url "https://github.com/raultov/chrome-debug-mcp/releases/download/v1.5.1/chrome-debug-mcp-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "a421af3d519163d7cb066015cc63864ea2c69757d8db111e660a9b237797c7e5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/raultov/chrome-debug-mcp/releases/download/v1.5.0/chrome-debug-mcp-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "13b7491ae9528789962edd58faa2a8722e28681708666704b4beb726fb2cf3cd"
+      url "https://github.com/raultov/chrome-debug-mcp/releases/download/v1.5.1/chrome-debug-mcp-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "62a81f6f0500fe3cf365a91d1de6b674f149fa7c7b8735f350097aa5c159c9a8"
     end
   end
   license "MIT"
 
   BINARY_ALIASES = {
-    "aarch64-apple-darwin": {},
+    "aarch64-apple-darwin":      {},
     "aarch64-unknown-linux-gnu": {},
-    "x86_64-apple-darwin": {},
-    "x86_64-pc-windows-gnu": {},
-    "x86_64-unknown-linux-gnu": {}
-  }
+    "x86_64-apple-darwin":       {},
+    "x86_64-pc-windows-gnu":     {},
+    "x86_64-unknown-linux-gnu":  {},
+  }.freeze
 
   def target_triple
     cpu = Hardware::CPU.arm? ? "aarch64" : "x86_64"
