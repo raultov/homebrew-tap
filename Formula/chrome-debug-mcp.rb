@@ -1,25 +1,25 @@
 class ChromeDebugMcp < Formula
   desc "Rust MCP Server for full Chrome CDP control and interactive JS debugging"
   homepage "https://github.com/raultov/chrome-debug-mcp"
-  version "1.5.2"
+  version "1.5.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/raultov/chrome-debug-mcp/releases/download/v1.5.2/chrome-debug-mcp-aarch64-apple-darwin.tar.xz"
-      sha256 "c382c3e1af9c5fa12211f9dc7ad09046c45852912e8cbcad6cf63cc878f9b1a8"
+      url "https://github.com/raultov/chrome-debug-mcp/releases/download/v1.5.3/chrome-debug-mcp-aarch64-apple-darwin.tar.xz"
+      sha256 "8c517ec5df25e58f18a79cd62c9e0616dccf1d76cc13e3e7a64e2f2de381ceda"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/raultov/chrome-debug-mcp/releases/download/v1.5.2/chrome-debug-mcp-x86_64-apple-darwin.tar.xz"
-      sha256 "a341857c63edaba756a76a62040a44c95790a0803747cee58561c80083c48fba"
+      url "https://github.com/raultov/chrome-debug-mcp/releases/download/v1.5.3/chrome-debug-mcp-x86_64-apple-darwin.tar.xz"
+      sha256 "7023e25bb40e50a9dc0bdb13f355c53bb4a36c50fd1ca84bb15ca8e089483d69"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/raultov/chrome-debug-mcp/releases/download/v1.5.2/chrome-debug-mcp-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "b75b66f65d3ae1e47c8b86b792e0b88c96e9d5b0a5d9d273f97e79755e9db826"
+      url "https://github.com/raultov/chrome-debug-mcp/releases/download/v1.5.3/chrome-debug-mcp-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "ef1496b2eaf4a6bb764c576d8ca6264a0554a8c3784eb09309167bfe1b55ed11"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/raultov/chrome-debug-mcp/releases/download/v1.5.2/chrome-debug-mcp-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "ca5714203595d3fc0e3bf29ecd4ee2c21119ad6204decec166d6dbeb12bf1ca0"
+      url "https://github.com/raultov/chrome-debug-mcp/releases/download/v1.5.3/chrome-debug-mcp-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "4471c319ce4add030286acd6cb87248800f27ddadf5184f6b11ff891a19fe827"
     end
   end
   license "MIT"
