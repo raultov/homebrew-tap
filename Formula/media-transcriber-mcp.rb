@@ -1,25 +1,25 @@
 class MediaTranscriberMcp < Formula
   desc "MCP server for transcribing local video and audio files using Whisper"
   homepage "https://github.com/raultov/media-transcriber-mcp"
-  version "0.8.1"
+  version "0.8.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/raultov/media-transcriber-mcp/releases/download/v0.8.1/media-transcriber-mcp-aarch64-apple-darwin.tar.xz"
-      sha256 "b52c712a7630dd4c9a4d96f172c7ca3c5b1215ad7f79c303b56978d821acbcfd"
+      url "https://github.com/raultov/media-transcriber-mcp/releases/download/v0.8.3/media-transcriber-mcp-aarch64-apple-darwin.tar.xz"
+      sha256 "1b593d546ce97c28556a7e7c5b0d8411af9d94e0d42d5e37388a6c1faa84fc3a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/raultov/media-transcriber-mcp/releases/download/v0.8.1/media-transcriber-mcp-x86_64-apple-darwin.tar.xz"
-      sha256 "1b54da576af67330107d35a312dbd041c53c419604e68b34cc2c1489f2420e54"
+      url "https://github.com/raultov/media-transcriber-mcp/releases/download/v0.8.3/media-transcriber-mcp-x86_64-apple-darwin.tar.xz"
+      sha256 "22ca9d4082910db9bc51e9472afa5a72d704f26f80d6512e9df9691781fba9cd"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/raultov/media-transcriber-mcp/releases/download/v0.8.1/media-transcriber-mcp-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "02e04f8c37af9c351440ce06dc2bff5d4aadb3407506283daf1f11feaa86cbc4"
+      url "https://github.com/raultov/media-transcriber-mcp/releases/download/v0.8.3/media-transcriber-mcp-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "884c2260d314b88a9187d12ee44f03a20ff3a04bd171bfc96ff78d7b7f4f5b65"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/raultov/media-transcriber-mcp/releases/download/v0.8.1/media-transcriber-mcp-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "2aed46c24c1c8f5200f632edcf8ea63c8d0275cac932ad8bc1fadd6ea043e349"
+      url "https://github.com/raultov/media-transcriber-mcp/releases/download/v0.8.3/media-transcriber-mcp-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "338b07ac16020854fd169b051d763eb5432ac84fdd69e5666c6ccdde472cb6f5"
     end
   end
   license "MIT"
