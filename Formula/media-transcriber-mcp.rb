@@ -1,25 +1,25 @@
 class MediaTranscriberMcp < Formula
   desc "MCP server for transcribing local video and audio files using Whisper"
   homepage "https://github.com/raultov/media-transcriber-mcp"
-  version "0.10.0"
+  version "0.10.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/raultov/media-transcriber-mcp/releases/download/v0.10.0/media-transcriber-mcp-aarch64-apple-darwin.tar.xz"
-      sha256 "27895ed1815483ce6a66dfc9cdd8c318776a556f69565a44978f8b1e9976386e"
+      url "https://github.com/raultov/media-transcriber-mcp/releases/download/v0.10.1/media-transcriber-mcp-aarch64-apple-darwin.tar.xz"
+      sha256 "94b7cf1adfd92e88d102202dfb0f7f7840466e12a77731e15603445a8cb88cf1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/raultov/media-transcriber-mcp/releases/download/v0.10.0/media-transcriber-mcp-x86_64-apple-darwin.tar.xz"
-      sha256 "ade5c75ad90d95b5c96f5ce069ea259b3085cc0c1b02c0863f2102ced36fb4cc"
+      url "https://github.com/raultov/media-transcriber-mcp/releases/download/v0.10.1/media-transcriber-mcp-x86_64-apple-darwin.tar.xz"
+      sha256 "8ac11014a20246f0b626cdd6e53b11195092e5baa5280cd5c583e0ddd7984645"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/raultov/media-transcriber-mcp/releases/download/v0.10.0/media-transcriber-mcp-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "f68c785e53eac7a619eab430cb56a7758eb65b60f9b4a061d67600d11123240e"
+      url "https://github.com/raultov/media-transcriber-mcp/releases/download/v0.10.1/media-transcriber-mcp-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "03dbc85df6c932cf8a85a194d3094381cfa3b8785262f8efda9ba604e3b2d39e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/raultov/media-transcriber-mcp/releases/download/v0.10.0/media-transcriber-mcp-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "9e8244c60391e7da0e7ab25fe13ffb6095a6211a0b20ca192e140454611975a5"
+      url "https://github.com/raultov/media-transcriber-mcp/releases/download/v0.10.1/media-transcriber-mcp-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "aed16da5a4e59837ea48f3f392f69dcf2641b3597e5c1bee847d5ae2f218f187"
     end
   end
   license "MIT"
