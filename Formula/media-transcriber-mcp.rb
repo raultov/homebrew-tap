@@ -1,25 +1,25 @@
 class MediaTranscriberMcp < Formula
   desc "MCP server for transcribing local video and audio files using Whisper"
   homepage "https://github.com/raultov/media-transcriber-mcp"
-  version "0.9.1"
+  version "0.10.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/raultov/media-transcriber-mcp/releases/download/v0.9.1/media-transcriber-mcp-aarch64-apple-darwin.tar.xz"
-      sha256 "c75eafcd47dd5feb618a6ec3c8a2decaccaf096372dd952df0739d6961326f96"
+      url "https://github.com/raultov/media-transcriber-mcp/releases/download/v0.10.0/media-transcriber-mcp-aarch64-apple-darwin.tar.xz"
+      sha256 "27895ed1815483ce6a66dfc9cdd8c318776a556f69565a44978f8b1e9976386e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/raultov/media-transcriber-mcp/releases/download/v0.9.1/media-transcriber-mcp-x86_64-apple-darwin.tar.xz"
-      sha256 "2a7e537712f7da536899a111ed35ac18830a7ffaca8447c6e23be10bda1ebd91"
+      url "https://github.com/raultov/media-transcriber-mcp/releases/download/v0.10.0/media-transcriber-mcp-x86_64-apple-darwin.tar.xz"
+      sha256 "ade5c75ad90d95b5c96f5ce069ea259b3085cc0c1b02c0863f2102ced36fb4cc"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/raultov/media-transcriber-mcp/releases/download/v0.9.1/media-transcriber-mcp-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "487e2271573bdbbcff6400e1b192b44c557c061e1cbda7d7e713ffdba1042e0c"
+      url "https://github.com/raultov/media-transcriber-mcp/releases/download/v0.10.0/media-transcriber-mcp-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f68c785e53eac7a619eab430cb56a7758eb65b60f9b4a061d67600d11123240e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/raultov/media-transcriber-mcp/releases/download/v0.9.1/media-transcriber-mcp-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "14f5cd1e6c1f54addbc0662bd2c8708f482b18505f853cc07f5802338dce42aa"
+      url "https://github.com/raultov/media-transcriber-mcp/releases/download/v0.10.0/media-transcriber-mcp-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "9e8244c60391e7da0e7ab25fe13ffb6095a6211a0b20ca192e140454611975a5"
     end
   end
   license "MIT"
