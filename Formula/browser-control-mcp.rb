@@ -1,25 +1,25 @@
 class BrowserControlMcp < Formula
   desc "MCP server to control and debug Chrome and Firefox at runtime: breakpoints, call frames and stepping over CDP and WebDriver BiDi/RDP, plus navigation, DOM, input, screenshots, console and network capture."
   homepage "https://github.com/raultov/browser-control-mcp"
-  version "0.3.0-beta.3"
+  version "0.3.1-beta.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/raultov/browser-control-mcp/releases/download/v0.3.0-beta.3/browser-control-mcp-aarch64-apple-darwin.tar.xz"
-      sha256 "e7c4521851517b6a4ac177a79e62f800a7747c2d5a1ccc4392702a59451a429f"
+      url "https://github.com/raultov/browser-control-mcp/releases/download/v0.3.1-beta.3/browser-control-mcp-aarch64-apple-darwin.tar.xz"
+      sha256 "3c643938de1b31074bfbd4a51066c9764962c20d83136ae8c987905a7ec0d7cb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/raultov/browser-control-mcp/releases/download/v0.3.0-beta.3/browser-control-mcp-x86_64-apple-darwin.tar.xz"
-      sha256 "56289f0fe2762415330443117860a44784b06f058be2c719d1cadb67efd91502"
+      url "https://github.com/raultov/browser-control-mcp/releases/download/v0.3.1-beta.3/browser-control-mcp-x86_64-apple-darwin.tar.xz"
+      sha256 "c611a07529c8261a297abf7235f43c18ba7515ffa59bd8db69b1cafc0c6f64de"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/raultov/browser-control-mcp/releases/download/v0.3.0-beta.3/browser-control-mcp-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "ddcf5592a3e0f48b75d38a40376e655ba2391dadd72a602fd9772a46caf0fba9"
+      url "https://github.com/raultov/browser-control-mcp/releases/download/v0.3.1-beta.3/browser-control-mcp-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "daf4830e84d63efe80d2e14c3616baa6c0cbbd700ec0d37b9099024660b51266"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/raultov/browser-control-mcp/releases/download/v0.3.0-beta.3/browser-control-mcp-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "1407551702ddb40b4079df92d46c9495b7b7c38885fa195723cdecfb3435d063"
+      url "https://github.com/raultov/browser-control-mcp/releases/download/v0.3.1-beta.3/browser-control-mcp-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "ba40b6ea650aa4b290f8d9bcc11c36418eeb63e6d5da72944388c7af95a882e6"
     end
   end
   license "MIT"
