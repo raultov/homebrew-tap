@@ -1,25 +1,25 @@
 class BrowserControlMcp < Formula
   desc "MCP server to control and debug Chrome and Firefox, with JavaScript breakpoints"
   homepage "https://github.com/raultov/browser-control-mcp"
-  version "0.10.0-beta.14"
+  version "0.10.0-beta.15"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/raultov/browser-control-mcp/releases/download/v0.10.0-beta.14/browser-control-mcp-aarch64-apple-darwin.tar.xz"
-      sha256 "4cd0f8c156cd8e3090ed53d9ed4eb55d06f22e3d92914a0cac5acc69ad0af757"
+      url "https://github.com/raultov/browser-control-mcp/releases/download/v0.10.0-beta.15/browser-control-mcp-aarch64-apple-darwin.tar.xz"
+      sha256 "04f0d3bd77f9685cac23b0ea4bb02f5fca940994b786899c79f31fe8b704abea"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/raultov/browser-control-mcp/releases/download/v0.10.0-beta.14/browser-control-mcp-x86_64-apple-darwin.tar.xz"
-      sha256 "bc6b0214eb4373cb92a876708dbfe6299ec19838e7b3ade41754662beb48f85c"
+      url "https://github.com/raultov/browser-control-mcp/releases/download/v0.10.0-beta.15/browser-control-mcp-x86_64-apple-darwin.tar.xz"
+      sha256 "059f66ffe2fdda77010963d2ebf23056d84a7d9878d7ed0e5402422b4d6c81c5"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/raultov/browser-control-mcp/releases/download/v0.10.0-beta.14/browser-control-mcp-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "580bb0bdf79634c599c75af30bf8ce8c0f69c6441be0e127289cbbdb34b6cde1"
+      url "https://github.com/raultov/browser-control-mcp/releases/download/v0.10.0-beta.15/browser-control-mcp-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "955be6e5fa993ee35df664bc8436152ffb5b1894553063267db21a151a23cec5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/raultov/browser-control-mcp/releases/download/v0.10.0-beta.14/browser-control-mcp-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "6e7652b0cb1e45f4a11b5a3b5482ae81aa23b4028460dbace108248a246975ad"
+      url "https://github.com/raultov/browser-control-mcp/releases/download/v0.10.0-beta.15/browser-control-mcp-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "743db049fc4befd3a77ce09829b8f84f7a7b09d4d338d5a22d6a2fb77272d8a8"
     end
   end
   license "MIT"
